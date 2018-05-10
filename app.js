@@ -45,9 +45,9 @@ function printTable(obj){
     if(obj.loc){
         latLon = obj.loc.split(",");
     }
-    createTable(' Location',['Country', 'Region','City'],[obj.country, obj.region, obj.city]);
-    createTable(' Coordinates',['Latitude', 'Longitude'],[latLon[0], latLon[1]]);
-    console.log(' Organizations\n');
+    createTable(' **Location**',['_Country_', '_Region_','_City_'],[obj.country, obj.region, obj.city]);
+    createTable(' **Coordinates**',['_Latitude_', '_Longitude_'],[latLon[0], latLon[1]]);
+    console.log(' **Organizations**\n');
     console.log(` ${obj.org}`);
 }
 
